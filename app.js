@@ -57,6 +57,8 @@ Inserir();
 
 function AparecerDiv() {
   let div = document.querySelector('.device');
+  let rep = document.querySelector('.reprodutor-de-musicas');
+  rep.style.position = 'relative';
   div.style.display = 'block';
   div.style.display = 'flex';
   let elementoDestino = document.querySelector('.device');
@@ -64,6 +66,7 @@ function AparecerDiv() {
 
   setTimeout(function() {
     div.style.display = 'none'; 
+    rep.style.position = 'fixed';
   }, 5000);
 }
 

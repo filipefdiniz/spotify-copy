@@ -8,13 +8,14 @@
 
 /* ===== Corpo ===== */
 body{
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     
 }
 .container{
     display: flex;
-    background: linear-gradient(to top,#000000, #222222);
     height: 100%;
+    background: linear-gradient(to top,#000000, #222222);
 }
 /* ===== Barra de scroll ===== */
 ::-webkit-scrollbar {
@@ -37,6 +38,8 @@ body{
     background-color: rgb(0, 0, 0);
     width: 250px;
     justify-content: start;
+    position: fixed;
+    z-index: 0;
 }
 .logo{
     width: 164px;
@@ -71,9 +74,14 @@ li:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
     margin: 50px;
     gap: 20px;
+    overflow-y: auto; /* Adicionamos a propriedade overflow-y para permitir rolagem vertical */
+    flex: 1;
+    box-sizing: border-box;
+    min-height: 0;
+    margin-left: 300px;
+    
 }
 .playlist-menu{
     display: flex;
@@ -82,6 +90,7 @@ li:hover{
     align-content: flex-start;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 200px;
 }
 .playlists{
     background-color: rgb(48, 48, 48, 0.8);
@@ -110,6 +119,7 @@ li:hover{
     height: auto;
     overflow-x: auto;
     overflow-y: hidden;
+    margin-bottom: 100px;
     
 
 }
@@ -148,6 +158,10 @@ li:hover{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .reproduzir{
     display: flex;
@@ -214,5 +228,6 @@ li:hover{
     justify-content: end;
     padding: 2px 20px;
     display: none;
+    width: 100%;
   }
   
