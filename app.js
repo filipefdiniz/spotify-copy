@@ -1,4 +1,5 @@
 function Inserir() {
+  //Array de músicas
   let musics = {
     info: [
       {
@@ -55,10 +56,17 @@ function Inserir() {
 Inserir();
 
 function AparecerDiv() {
-  const div = document.querySelector('.device');
+  let div = document.querySelector('.device');
   div.style.display = 'block';
   div.style.display = 'flex';
+  let elementoDestino = document.querySelector('.device');
+  elementoDestino.scrollIntoView({ behavior: 'smooth' });
+
+  setTimeout(function() {
+    div.style.display = 'none'; 
+  }, 5000);
 }
+
 
 //Volume bar
 document.addEventListener('DOMContentLoaded', function () {

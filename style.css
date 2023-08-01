@@ -182,7 +182,7 @@ li:hover{
     cursor: pointer;
 }
 .volume-bar1 {
-    width: 300px;
+    width: 200px;
     height: 7px;
     background-color: #ccc;
     border-radius: 5px;
