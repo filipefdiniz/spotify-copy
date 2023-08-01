@@ -44,7 +44,7 @@ body{
 ul{
     margin: 10px;
     list-style: none;
-    text-decoration: none;
+    
 }
 li{
     display:flex;
@@ -52,7 +52,11 @@ li{
     font-size: 15px;
     padding: 5px;
     padding-left: 20px;
-    width: 250px;
+    width: 200px;
+    transition: 0.2s;
+}
+li a{
+    text-decoration: none;
 }
 li:hover{
     cursor: pointer;
@@ -83,7 +87,11 @@ li:hover{
     display: flex;
     align-items: center;
     margin-top: 9px;
-    
+    transition: 0.5s;
+}
+.playlists:hover{
+    cursor: pointer;
+    transform: scale(1.05,1.05);
 }
 .icon{
     height: 60px;
@@ -103,6 +111,11 @@ li:hover{
     align-items: center;
     padding: 15px;
     gap: 20px;
+    transition: 0.5s;
+}
+.might-like:hover{
+    cursor: pointer;
+    transform: scale(1.02,1.02);
 }
 .info-liked{
     display: flex;
@@ -151,9 +164,11 @@ li:hover{
 }
 .icon-play{
     width: 24px;
+    transition: 0.5s;
 }
 .icon-play:hover{
-    box-shadow: 1px 4px 10px green;
+    transform: scale(1.2,1.2);
+    cursor: pointer;
 }
 .volume-bar1 {
     width: 300px;
@@ -166,7 +181,7 @@ li:hover{
     height: 100%;
     background-color: #4caf50;
     border-radius: 5px;
-    width: 50%; /* Altere este valor para definir o volume inicial */
+    width: 50%; 
   }
   .volume-bar {
     width: 80px;
@@ -179,7 +194,7 @@ li:hover{
     height: 100%;
     background-color: #4caf50;
     border-radius: 5px;
-    width: 50%; /* Altere este valor para definir o volume inicial */
+    width: 50%; 
   }
   .device{
     background-color: #4caf50;
